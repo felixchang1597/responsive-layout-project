@@ -1,0 +1,256 @@
+/* Importing the serif google font */
+
+@font-face {
+    font-family: 'Acme Regular';
+    src: url('../css_fonts/Acme-Regular.ttf') format('truetype');
+}
+
+* {
+    font-family: 'Acme Regular';
+    text-align: center;
+    align-content: center;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: rgb(247, 247, 247);
+}
+
+.header {
+    background-color: rgb(247, 247, 247);
+    padding-bottom: 20px;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.nav li {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 110%;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-nav a,
+.footer-nav a {
+    color: black;
+}
+
+.main-nav a:hover {
+    color: #195880;
+}
+
+.responsive-images {
+    max-width: 30%;
+    max-height: 30%;
+    margin-top: 20px;
+}
+
+.footer {
+    padding-top: 15px;
+    margin-top: 25px;
+    background-color: rgb(247, 247, 247);
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h3 {
+    margin-bottom: -10px;
+}
+
+
+/* Media queries */
+
+@media (max-width: 320px) {
+    .responsive-images {
+        max-width: 90%;
+        max-height: 90%;
+    }
+    .nav {
+        margin-right: 30px;
+    }
+    .nav li {
+        width: 100%;
+        background-size: cover;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        block-size: 30px;
+        padding-top: 10px;
+        background: white;
+    }
+    .footer .student-name {
+        float: left;
+        padding-left: 20px;
+    }
+    .footer a {
+        padding-top: 22px;
+        float: right;
+        padding-right: 20px;
+    }
+    .main-nav a {
+        background: white;
+    }
+    p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .footer-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    h1 {
+        padding-top: 40px;
+    }
+    .nav {
+        margin-right: 30px;
+    }
+    .nav li {
+        background-size: cover;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        block-size: 30px;
+        padding-top: 10px;
+    }
+    .main-nav a {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #profile-pic {
+        max-width: 90%;
+        max-height: 90%;
+        float: right;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .intro {
+        margin-right: 30px;
+        margin-left: 30px;
+        display: block;
+        padding-top: 80px;
+    }
+    p {
+        display: inline-block;
+        text-align: left;
+    }
+    h2 {
+        margin-top: 50px;
+    }
+    .header {
+        padding-bottom: 120px;
+    }
+    .responsive-images {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .column {
+        float: left;
+        width: 45%;
+        margin-left: 25px;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .footer p {
+        text-align: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .top-mobile {
+        display: none;
+    }
+    .footer .student-name {
+        text-align: left;
+    }
+    .footer-nav {
+        text-align: right;
+    }
+    .footer-nav .nav {
+        display: inline;
+        margin-right: 0px;
+    }
+    .column-2 {
+        float: left;
+        width: 45%;
+        margin-left: 25px;
+    }
+    /* Clear floats after the columns */
+    .row-2:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@media (min-width: 1024px) {
+    .column {
+        float: left;
+        width: 31.7%;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    p {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #profile-pic {
+        float: right;
+        margin-right: 25px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .column-2 {
+        float: left;
+        width: 45%;
+        margin-left: 25px;
+    }
+    /* Clear floats after the columns */
+    .row-2:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    #footer-nav-id {
+        padding-left: 120px;
+    }
+    h1 {
+        float: left;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    .main-nav {
+        float: right;
+    }
+    .header {
+        padding: 1em 0;
+        padding-bottom: 250px;
+    }
+    .intro-section {
+        margin-top: 85px;
+    }
+}
