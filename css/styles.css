@@ -1,12 +1,5 @@
-/* Importing the serif google font */
-
-@font-face {
-    font-family: 'Acme Regular';
-    src: url('../css_fonts/Acme-Regular.ttf') format('truetype');
-}
-
 * {
-    font-family: 'Acme Regular';
+    font-family: 'Acme Regular', sans-serif;
     text-align: center;
     align-content: center;
 }
@@ -74,62 +67,69 @@ h3 {
     margin-bottom: -10px;
 }
 
+.responsive-images {
+    max-width: 90%;
+    max-height: 90%;
+}
 
-/* Media queries */
+.nav {
+    margin-right: 30px;
+}
 
-@media (max-width: 320px) {
-    .responsive-images {
-        max-width: 90%;
-        max-height: 90%;
-    }
-    .nav {
-        margin-right: 30px;
-    }
-    .nav li {
-        width: 100%;
-        background-size: cover;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        padding-top: 10px;
-        background: white;
-    }
-    .footer .student-name {
-        float: left;
-        padding-left: 20px;
-    }
-    .footer a {
-        padding-top: 22px;
-        float: right;
-        padding-right: 20px;
-    }
-    .main-nav a {
-        background: white;
-    }
-    p {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .footer-nav {
-        display: none;
-    }
+.nav li {
+    width: 100%;
+    background-size: cover;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    background: white;
+}
+
+.footer .student-name {
+    float: left;
+    padding-left: 20px;
+}
+
+.top-mobile {
+    float: right;
+    padding-right: 20px;
+}
+
+.main-nav a {
+    background: white;
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-nav {
+    display: none;
 }
 
 @media (min-width: 768px) {
     h1 {
-        padding-top: 40px;
+        margin-top: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .header {
+        padding-bottom: 20px;
+    }
+    .main-nav a {
+        background-color: rgb(247, 247, 247);
     }
     .nav {
         margin-right: 30px;
+        background-color: rgb(247, 247, 247);
     }
     .nav li {
         background-size: cover;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        background-color: rgb(247, 247, 247);
         padding-top: 10px;
-    }
-    .main-nav a {
-        margin-left: 20px;
-        margin-right: 20px;
+        padding-left: 40px;
+        display: inline;
     }
     #profile-pic {
         max-width: 90%;
@@ -183,25 +183,30 @@ h3 {
     }
     .footer-nav {
         text-align: right;
+        display: inline;
     }
     .footer-nav .nav {
         display: inline;
         margin-right: 0px;
+        padding-top: 10px;
+        padding-left: 250px;
     }
-    .column-2 {
-        float: left;
-        width: 45%;
-        margin-left: 25px;
-    }
-    /* Clear floats after the columns */
-    .row-2:after {
-        content: "";
-        display: table;
-        clear: both;
+    #footer-nav-id {
+        padding-top: 15px;
+        margin-left: 15px;
     }
 }
 
 @media (min-width: 1024px) {
+    .nav li {
+        width: 33%;
+    }
+    .nav {
+        padding-top: 10px;
+    }
+    .nav li {
+        display: inline;
+    }
     .column {
         float: left;
         width: 31.7%;
@@ -221,19 +226,11 @@ h3 {
         margin-left: 20px;
         margin-top: 20px;
     }
-    .column-2 {
-        float: left;
-        width: 45%;
-        margin-left: 25px;
-    }
     /* Clear floats after the columns */
     .row-2:after {
         content: "";
         display: table;
         clear: both;
-    }
-    #footer-nav-id {
-        padding-left: 120px;
     }
     h1 {
         float: left;
@@ -249,5 +246,11 @@ h3 {
     }
     .intro-section {
         margin-top: 85px;
+    }
+    .footer-nav .nav {
+        padding-left: 1400px;
+    }
+    #footer-nav-id {
+        padding-top: 20px;
     }
 }
