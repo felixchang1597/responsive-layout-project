@@ -164,7 +164,6 @@ p {
         width: 45%;
         margin-left: 25px;
     }
-    /* Clear floats after the columns */
     .row:after {
         content: "";
         display: table;
@@ -209,7 +208,7 @@ p {
     }
     .column {
         float: left;
-        width: 31.7%;
+        width: 30%;
     }
     .row:after {
         content: "";
@@ -248,7 +247,7 @@ p {
         margin-top: 85px;
     }
     .footer-nav .nav {
-        padding-left: 1400px;
+        padding-left: 50%;
     }
     #footer-nav-id {
         padding-top: 20px;
